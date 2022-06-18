@@ -4,22 +4,24 @@ import LinkCard from './LinkCard/LinkCard';
 function App() {
   const data = [
     {
-      title: 'Twitter',
+      title: 'twitter',
       tagline: "follow me on twitter",
-      username: '@MayurSonkusare9'
+      username: '@MayurSonkusare9',
+      link:"https://twitter.com/MayurSonkusare9?t=rsFSTQThz8WrS521cGdy5A&s=09"
 
     },
+    
     {
-      title: 'Linkdin',
-      tagline: "follow me on Linkdin",
-      username: '@MayurSonkusare9'
-
-    },
-    {
-      title: 'Git-Hub',
+      title: 'github',
       tagline: "follow me on Git-Hub",
-      username: 'mayur1908'
-
+      username: 'mayur1908',
+      link:"https://github.com/mayur1908",
+    },
+    {
+      title: 'linkdin',
+      tagline: "follow me on Linkdin",
+      username: '@MayurSonkusare9',
+      link:"https://www.linkedin.com/in/mayur-sonkusare-8305a121b"
     }
   ]
   return (
@@ -30,6 +32,7 @@ function App() {
           return <LinkCard title={cardinfo.title}
             tagline={cardinfo.tagline}
             username={cardinfo.username}
+            link={cardinfo.link}
           />
         }
         )
